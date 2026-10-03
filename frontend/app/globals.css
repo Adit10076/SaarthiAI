@@ -1,0 +1,182 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial,
+   sans-serif;
+  background: #0f1117;
+  color: #e8eaed;
+  line-height: 1.6;
+}
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem 1rem 4rem;
+}
+
+header {
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+header p {
+  color: #9aa0a6;
+  margin-top: 0.25rem;
+}
+
+.pipeline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  color: #9aa0a6;
+}
+
+.pipeline span {
+  background: #1a1d27;
+  border: 1px solid #2a2d37;
+  border-radius: 4px;
+  padding: 0.2rem 0.5rem;
+}
+
+.pipeline .arrow {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Card layout shared by upload and query sections */
+card,
+section {
+  display: block;
+}
+
+section {
+  background: #1a1d27;
+  border: 1px solid #2a2d37;
+  border-radius: 8px;
+  padding: 1.25rem;
+}
+
+section h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.subtitle {
+  color: #9aa0a6;
+  font-size: 0.875rem;
+  margin: 0.25rem 0 1rem;
+}
+
+input[type="file"] {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+  color: #9aa0a6;
+}
+
+button {
+  background: #4f8cff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.status {
+  margin-top: 0.75rem;
+  font-size: 0.875rem;
+  color: #81c995;
+}
+
+/* Chat messages */
+.messages {
+  min-height: 120px;
+  max-height: 400px;
+  overflow-y: auto;
+  margin-bottom: 1rem;
+}
+
+.empty {
+  color: #9aa0a6;
+  font-size: 0.875rem;
+}
+
+.message {
+  margin-bottom: 0.75rem;
+  padding: 0.75rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+}
+
+.message.user {
+  background: #252830;
+}
+
+.message.assistant {
+  background: #1e2433;
+  border: 1px solid #2a3055;
+}
+
+.message strong {
+  display: block;
+  font-size: 0.75rem;
+  color: #9aa0a6;
+  margin-bottom: 0.25rem;
+}
+
+.sources {
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+  color: #9aa0a6;
+}
+
+.loading {
+  color: #9aa0a6;
+  font-size: 0.875rem;
+}
+
+.query-form {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.query-form input[type="text"] {
+  flex: 1;
+  background: #252830;
+  border: 1px solid #2a2d37;
+  border-radius: 6px;
+  color: #e8eaed;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+}
+
+.query-form input:focus {
+  outline: none;
+  border-color: #4f8cff;
+}

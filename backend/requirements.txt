@@ -1,0 +1,30 @@
+fastapi
+uvicorn[standard]
+python-multipart
+python-dotenv
+pydantic-settings
+
+# LangChain core
+langchain
+langchain-core
+langchain-community
+langchain-groq
+langchain-qdrant
+langchain-huggingface
+langchain-text-splitters
+langchain-classic
+
+# Document parsing
+llama-parse
+
+# Vector DB & Hybrid Search
+qdrant-client
+fastembed
+
+# Embeddings + reranker via HF Inference API (no local model download)
+huggingface-hub
+
+# Testing
+pytest
+httpx
+
